@@ -30,9 +30,9 @@ def get_image_from_video(filename, frame):
     ret = True
     index = 0
     while (fc < frameCount and ret):
-        if fc in frame:
-            # print(fc)
-            ret, buf[index] = cap.read()
+        ret, frame_data = cap.read()
+        if ret and fc in frame:
+            buf[index] = frame_data
             index += 1
         fc += 1
     buf = buf[:, :, :, :].transpose(0, 3, 1, 2)
