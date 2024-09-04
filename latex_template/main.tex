@@ -1,0 +1,115 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+\usepackage{hyperref} 
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{silence}
+\WarningFilter{latexfont}{Font}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+\usepackage{color}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+% \urlstyle{rm}
+%
+\begin{document}
+%
+\title{Baseline Method at the Intrapartum Ultrasound Grand Challenge 2024}
+%
+%\titlerunning{.}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Zihao Zhou}
+%
+%\authorrunning{Z. Zhou}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{College of Information Science and Technology, Jinan University, Guangzhou 510632, China
+}
+%
+\maketitle              % typeset the header of the contribution
+%
+
+\begin{abstract}
+....
+\keywords{Intrapartum Ultrasound \and ...}
+\end{abstract}
+
+
+\section{Introduction}
+
+This is citation \cite{ronneberger2015u}.
+
+\section{Method}
+
+\begin{figure*}[!b]
+\centering
+\includegraphics[width=\textwidth]{pictures/figure_1.png}
+\caption{An overview of the baseline method network architecture.} 
+\label{fig1}
+\end{figure*}
+\subsection{Network}
+
+Fig. \ref{fig1} illustrates ... 
+
+
+
+\begin{equation}
+F^{\prime}= Conv\left( F_{\mathrm{in}} \right)
+\end{equation}
+
+\subsection{Loss Function}
+
+\subsection{Training Details}
+
+\subsection{Inference Details}
+
+
+\section{Experiments and Results}
+\subsection{Datasets}
+
+\subsection{Metrics}
+
+
+\subsection{Experiments}
+Table \ref{tab1} presents the specific results.
+
+
+\begin{table}[htbp]
+  \renewcommand{\arraystretch}{1.25}
+  \centering
+  \caption{Experimental results on the validation and test sets.}
+    \begin{tabular}{}
+
+    \end{tabular}%
+  \label{tab1}%
+\end{table}%
+
+
+\section{Discussion}
+...
+
+
+\section{Conclusion}
+...
+
+\bibliographystyle{splncs04}
+\bibliography{ref}
+%
+
+\end{document}
